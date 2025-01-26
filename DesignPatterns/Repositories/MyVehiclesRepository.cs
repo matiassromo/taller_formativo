@@ -9,7 +9,12 @@ namespace DesignPatterns.Repositories
 {
     public class MyVehiclesRepository : IVehicleRepository
     {
-        
+        private readonly MemoryCollection _memoryCollection = MemoryCollection.Instance;
+
+        public MyVehiclesRepository()
+        {
+            
+        }
 
         public void AddVehicle(Vehicle vehicle)
         {
