@@ -16,10 +16,6 @@ namespace DesignPatterns.Repositories
             
         }
 
-        public void AddVehicle(Vehicle vehicle)
-        {
-            _memoryCollection.Vehicles.Add(vehicle);
-        }
 
         public Vehicle Find(string id)
         {
